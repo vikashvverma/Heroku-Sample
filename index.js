@@ -38,7 +38,7 @@ app.get('/sendemail', function(request, response) {
   }
   var mailer = nodemailer.createTransport(sgTransport(options));
     var email = {
-      to: ['support@civimechengineering.com'],
+      to: ['contact@civimechengineering.com'],
       bcc:['vermavikash014@gmail.com'],
       from: request.query.name+"<"+request.query.email+">",
       subject: request.query.subject,
